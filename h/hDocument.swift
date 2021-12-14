@@ -14,10 +14,10 @@ extension UTType {
     }
 }
 
-struct hDocument: FileDocument {
+struct noteDocument: FileDocument {
     var text: String
 
-    init(text: String = "Hello, world!") {
+    init(text: String = "") {
         self.text = text
     }
 

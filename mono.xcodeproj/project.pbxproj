@@ -15,6 +15,8 @@
 		EB3EA73427689A6600ECFB33 /* hTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3EA73327689A6600ECFB33 /* hTests.swift */; };
 		EB3EA73E27689A6600ECFB33 /* hUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3EA73D27689A6600ECFB33 /* hUITests.swift */; };
 		EB3EA74027689A6600ECFB33 /* hUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3EA73F27689A6600ECFB33 /* hUITestsLaunchTests.swift */; };
+		EBC4CCB62768ADC400267139 /* CDMarkdownKit in Frameworks */ = {isa = PBXBuildFile; productRef = EBC4CCB52768ADC400267139 /* CDMarkdownKit */; };
+		EBC4CCC02768B17B00267139 /* SwiftyMonaco in Frameworks */ = {isa = PBXBuildFile; productRef = EBC4CCBF2768B17B00267139 /* SwiftyMonaco */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBC4CCB62768ADC400267139 /* CDMarkdownKit in Frameworks */,
+				EBC4CCC02768B17B00267139 /* SwiftyMonaco in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +154,10 @@
 			dependencies = (
 			);
 			name = h;
+			packageProductDependencies = (
+				EBC4CCB52768ADC400267139 /* CDMarkdownKit */,
+				EBC4CCBF2768B17B00267139 /* SwiftyMonaco */,
+			);
 			productName = h;
 			productReference = EB3EA71B27689A6500ECFB33 /* h.app */;
 			productType = "com.apple.product-type.application";
@@ -213,7 +221,7 @@
 					};
 				};
 			};
-			buildConfigurationList = EB3EA71627689A6500ECFB33 /* Build configuration list for PBXProject "h" */;
+			buildConfigurationList = EB3EA71627689A6500ECFB33 /* Build configuration list for PBXProject "mono" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -222,6 +230,10 @@
 				Base,
 			);
 			mainGroup = EB3EA71227689A6500ECFB33;
+			packageReferences = (
+				EBC4CCB42768ADC400267139 /* XCRemoteSwiftPackageReference "CDMarkdownKit" */,
+				EBC4CCBE2768B17B00267139 /* XCRemoteSwiftPackageReference "SwiftyMonaco" */,
+			);
 			productRefGroup = EB3EA71C27689A6500ECFB33 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -439,7 +451,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = xyz.7df.h;
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.7df.mono;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -467,7 +479,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = xyz.7df.h;
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.7df.mono;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -573,7 +585,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EB3EA71627689A6500ECFB33 /* Build configuration list for PBXProject "h" */ = {
+		EB3EA71627689A6500ECFB33 /* Build configuration list for PBXProject "mono" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EB3EA74127689A6600ECFB33 /* Debug */,
@@ -610,6 +622,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EBC4CCB42768ADC400267139 /* XCRemoteSwiftPackageReference "CDMarkdownKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/chrisdhaan/CDMarkdownKit.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		EBC4CCBE2768B17B00267139 /* XCRemoteSwiftPackageReference "SwiftyMonaco" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ICToolkit/SwiftyMonaco.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EBC4CCB52768ADC400267139 /* CDMarkdownKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EBC4CCB42768ADC400267139 /* XCRemoteSwiftPackageReference "CDMarkdownKit" */;
+			productName = CDMarkdownKit;
+		};
+		EBC4CCBF2768B17B00267139 /* SwiftyMonaco */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EBC4CCBE2768B17B00267139 /* XCRemoteSwiftPackageReference "SwiftyMonaco" */;
+			productName = SwiftyMonaco;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EB3EA71327689A6500ECFB33 /* Project object */;
 }

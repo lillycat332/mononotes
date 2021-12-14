@@ -10,7 +10,7 @@ import SwiftUI
 @main
 struct hApp: App {
     var body: some Scene {
-        DocumentGroup(newDocument: hDocument()) { file in
+        DocumentGroup(newDocument: noteDocument()) { file in
             ContentView(document: file.$document)
         }
     }

@@ -6,17 +6,23 @@
 //
 
 import SwiftUI
+import SwiftyMonaco
 
 struct ContentView: View {
-    @Binding var document: hDocument
-
-    var body: some View {
-        TextEditor(text: $document.text)
+  @Binding var document: noteDocument
+  
+  var body: some View {
+    NavigationView {
+      List {
+        Label("hi", systemImage: "doc.text")
+      }
+      SwiftyMonaco(text: $document.text)
     }
+  }
 }
 
 struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView(document: .constant(hDocument()))
-    }
+  static var previews: some View {
+    ContentView(document: .constant(noteDocument()))
+  }
 }

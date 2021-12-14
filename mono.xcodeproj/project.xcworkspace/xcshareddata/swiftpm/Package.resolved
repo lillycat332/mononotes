@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "CDMarkdownKit",
+        "repositoryURL": "https://github.com/chrisdhaan/CDMarkdownKit.git",
+        "state": {
+          "branch": "master",
+          "revision": "7e76895dc0b2bd8e9e1f2d3e3c8e90b24bc834a9",
+          "version": null
+        }
+      },
+      {
+        "package": "SwiftyMonaco",
+        "repositoryURL": "https://github.com/ICToolkit/SwiftyMonaco.git",
+        "state": {
+          "branch": "main",
+          "revision": "2dd9dcf74501ec231a0dfac567dbbcadbf779899",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
