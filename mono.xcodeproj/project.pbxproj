@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EB3EA71F27689A6500ECFB33 /* hApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3EA71E27689A6500ECFB33 /* hApp.swift */; };
-		EB3EA72127689A6500ECFB33 /* hDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3EA72027689A6500ECFB33 /* hDocument.swift */; };
+		EB3EA71F27689A6500ECFB33 /* monoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3EA71E27689A6500ECFB33 /* monoApp.swift */; };
+		EB3EA72127689A6500ECFB33 /* monoDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3EA72027689A6500ECFB33 /* monoDocument.swift */; };
 		EB3EA72327689A6500ECFB33 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3EA72227689A6500ECFB33 /* ContentView.swift */; };
 		EB3EA72527689A6600ECFB33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB3EA72427689A6600ECFB33 /* Assets.xcassets */; };
 		EB3EA72827689A6600ECFB33 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB3EA72727689A6600ECFB33 /* Preview Assets.xcassets */; };
@@ -37,17 +37,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		EB3EA71B27689A6500ECFB33 /* h.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = h.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EB3EA71E27689A6500ECFB33 /* hApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hApp.swift; sourceTree = "<group>"; };
-		EB3EA72027689A6500ECFB33 /* hDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hDocument.swift; sourceTree = "<group>"; };
+		EB3EA71B27689A6500ECFB33 /* mono.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mono.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB3EA71E27689A6500ECFB33 /* monoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = monoApp.swift; sourceTree = "<group>"; };
+		EB3EA72027689A6500ECFB33 /* monoDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = monoDocument.swift; sourceTree = "<group>"; };
 		EB3EA72227689A6500ECFB33 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EB3EA72427689A6600ECFB33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB3EA72727689A6600ECFB33 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EB3EA72927689A6600ECFB33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EB3EA72A27689A6600ECFB33 /* h.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = h.entitlements; sourceTree = "<group>"; };
-		EB3EA72F27689A6600ECFB33 /* hTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB3EA72A27689A6600ECFB33 /* mono.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = mono.entitlements; sourceTree = "<group>"; };
+		EB3EA72F27689A6600ECFB33 /* monoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = monoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB3EA73327689A6600ECFB33 /* hTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hTests.swift; sourceTree = "<group>"; };
-		EB3EA73927689A6600ECFB33 /* hUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB3EA73927689A6600ECFB33 /* monoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = monoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB3EA73D27689A6600ECFB33 /* hUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hUITests.swift; sourceTree = "<group>"; };
 		EB3EA73F27689A6600ECFB33 /* hUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,9 +82,9 @@
 		EB3EA71227689A6500ECFB33 = {
 			isa = PBXGroup;
 			children = (
-				EB3EA71D27689A6500ECFB33 /* h */,
-				EB3EA73227689A6600ECFB33 /* hTests */,
-				EB3EA73C27689A6600ECFB33 /* hUITests */,
+				EB3EA71D27689A6500ECFB33 /* mono */,
+				EB3EA73227689A6600ECFB33 /* monoTests */,
+				EB3EA73C27689A6600ECFB33 /* monoUITests */,
 				EB3EA71C27689A6500ECFB33 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,25 +92,25 @@
 		EB3EA71C27689A6500ECFB33 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EB3EA71B27689A6500ECFB33 /* h.app */,
-				EB3EA72F27689A6600ECFB33 /* hTests.xctest */,
-				EB3EA73927689A6600ECFB33 /* hUITests.xctest */,
+				EB3EA71B27689A6500ECFB33 /* mono.app */,
+				EB3EA72F27689A6600ECFB33 /* monoTests.xctest */,
+				EB3EA73927689A6600ECFB33 /* monoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EB3EA71D27689A6500ECFB33 /* h */ = {
+		EB3EA71D27689A6500ECFB33 /* mono */ = {
 			isa = PBXGroup;
 			children = (
-				EB3EA71E27689A6500ECFB33 /* hApp.swift */,
-				EB3EA72027689A6500ECFB33 /* hDocument.swift */,
+				EB3EA71E27689A6500ECFB33 /* monoApp.swift */,
+				EB3EA72027689A6500ECFB33 /* monoDocument.swift */,
 				EB3EA72227689A6500ECFB33 /* ContentView.swift */,
 				EB3EA72427689A6600ECFB33 /* Assets.xcassets */,
 				EB3EA72927689A6600ECFB33 /* Info.plist */,
-				EB3EA72A27689A6600ECFB33 /* h.entitlements */,
+				EB3EA72A27689A6600ECFB33 /* mono.entitlements */,
 				EB3EA72627689A6600ECFB33 /* Preview Content */,
 			);
-			path = h;
+			path = mono;
 			sourceTree = "<group>";
 		};
 		EB3EA72627689A6600ECFB33 /* Preview Content */ = {
@@ -121,29 +121,29 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		EB3EA73227689A6600ECFB33 /* hTests */ = {
+		EB3EA73227689A6600ECFB33 /* monoTests */ = {
 			isa = PBXGroup;
 			children = (
 				EB3EA73327689A6600ECFB33 /* hTests.swift */,
 			);
-			path = hTests;
+			path = monoTests;
 			sourceTree = "<group>";
 		};
-		EB3EA73C27689A6600ECFB33 /* hUITests */ = {
+		EB3EA73C27689A6600ECFB33 /* monoUITests */ = {
 			isa = PBXGroup;
 			children = (
 				EB3EA73D27689A6600ECFB33 /* hUITests.swift */,
 				EB3EA73F27689A6600ECFB33 /* hUITestsLaunchTests.swift */,
 			);
-			path = hUITests;
+			path = monoUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EB3EA71A27689A6500ECFB33 /* h */ = {
+		EB3EA71A27689A6500ECFB33 /* mono */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EB3EA74327689A6600ECFB33 /* Build configuration list for PBXNativeTarget "h" */;
+			buildConfigurationList = EB3EA74327689A6600ECFB33 /* Build configuration list for PBXNativeTarget "mono" */;
 			buildPhases = (
 				EB3EA71727689A6500ECFB33 /* Sources */,
 				EB3EA71827689A6500ECFB33 /* Frameworks */,
@@ -153,18 +153,18 @@
 			);
 			dependencies = (
 			);
-			name = h;
+			name = mono;
 			packageProductDependencies = (
 				EBC4CCB52768ADC400267139 /* CDMarkdownKit */,
 				EBC4CCBF2768B17B00267139 /* SwiftyMonaco */,
 			);
 			productName = h;
-			productReference = EB3EA71B27689A6500ECFB33 /* h.app */;
+			productReference = EB3EA71B27689A6500ECFB33 /* mono.app */;
 			productType = "com.apple.product-type.application";
 		};
-		EB3EA72E27689A6600ECFB33 /* hTests */ = {
+		EB3EA72E27689A6600ECFB33 /* monoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EB3EA74627689A6600ECFB33 /* Build configuration list for PBXNativeTarget "hTests" */;
+			buildConfigurationList = EB3EA74627689A6600ECFB33 /* Build configuration list for PBXNativeTarget "monoTests" */;
 			buildPhases = (
 				EB3EA72B27689A6600ECFB33 /* Sources */,
 				EB3EA72C27689A6600ECFB33 /* Frameworks */,
@@ -175,14 +175,14 @@
 			dependencies = (
 				EB3EA73127689A6600ECFB33 /* PBXTargetDependency */,
 			);
-			name = hTests;
+			name = monoTests;
 			productName = hTests;
-			productReference = EB3EA72F27689A6600ECFB33 /* hTests.xctest */;
+			productReference = EB3EA72F27689A6600ECFB33 /* monoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		EB3EA73827689A6600ECFB33 /* hUITests */ = {
+		EB3EA73827689A6600ECFB33 /* monoUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EB3EA74927689A6600ECFB33 /* Build configuration list for PBXNativeTarget "hUITests" */;
+			buildConfigurationList = EB3EA74927689A6600ECFB33 /* Build configuration list for PBXNativeTarget "monoUITests" */;
 			buildPhases = (
 				EB3EA73527689A6600ECFB33 /* Sources */,
 				EB3EA73627689A6600ECFB33 /* Frameworks */,
@@ -193,9 +193,9 @@
 			dependencies = (
 				EB3EA73B27689A6600ECFB33 /* PBXTargetDependency */,
 			);
-			name = hUITests;
+			name = monoUITests;
 			productName = hUITests;
-			productReference = EB3EA73927689A6600ECFB33 /* hUITests.xctest */;
+			productReference = EB3EA73927689A6600ECFB33 /* monoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -238,9 +238,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EB3EA71A27689A6500ECFB33 /* h */,
-				EB3EA72E27689A6600ECFB33 /* hTests */,
-				EB3EA73827689A6600ECFB33 /* hUITests */,
+				EB3EA71A27689A6500ECFB33 /* mono */,
+				EB3EA72E27689A6600ECFB33 /* monoTests */,
+				EB3EA73827689A6600ECFB33 /* monoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -276,8 +276,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB3EA71F27689A6500ECFB33 /* hApp.swift in Sources */,
-				EB3EA72127689A6500ECFB33 /* hDocument.swift in Sources */,
+				EB3EA71F27689A6500ECFB33 /* monoApp.swift in Sources */,
+				EB3EA72127689A6500ECFB33 /* monoDocument.swift in Sources */,
 				EB3EA72327689A6500ECFB33 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,12 +304,12 @@
 /* Begin PBXTargetDependency section */
 		EB3EA73127689A6600ECFB33 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EB3EA71A27689A6500ECFB33 /* h */;
+			target = EB3EA71A27689A6500ECFB33 /* mono */;
 			targetProxy = EB3EA73027689A6600ECFB33 /* PBXContainerItemProxy */;
 		};
 		EB3EA73B27689A6600ECFB33 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EB3EA71A27689A6500ECFB33 /* h */;
+			target = EB3EA71A27689A6500ECFB33 /* mono */;
 			targetProxy = EB3EA73A27689A6600ECFB33 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -435,16 +435,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = h/h.entitlements;
+				CODE_SIGN_ENTITLEMENTS = mono/mono.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"h/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"mono/Preview Content\"";
 				DEVELOPMENT_TEAM = UN964XDAH7;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = h/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -453,6 +455,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.7df.mono;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -463,16 +466,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = h/h.entitlements;
+				CODE_SIGN_ENTITLEMENTS = mono/mono.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"h/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"mono/Preview Content\"";
 				DEVELOPMENT_TEAM = UN964XDAH7;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = h/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -507,7 +512,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/h.app/Contents/MacOS/h";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mono.app/Contents/MacOS/mono";
 			};
 			name = Debug;
 		};
@@ -532,7 +537,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/h.app/Contents/MacOS/h";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mono.app/Contents/MacOS/mono";
 			};
 			name = Release;
 		};
@@ -594,7 +599,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EB3EA74327689A6600ECFB33 /* Build configuration list for PBXNativeTarget "h" */ = {
+		EB3EA74327689A6600ECFB33 /* Build configuration list for PBXNativeTarget "mono" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EB3EA74427689A6600ECFB33 /* Debug */,
@@ -603,7 +608,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EB3EA74627689A6600ECFB33 /* Build configuration list for PBXNativeTarget "hTests" */ = {
+		EB3EA74627689A6600ECFB33 /* Build configuration list for PBXNativeTarget "monoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EB3EA74727689A6600ECFB33 /* Debug */,
@@ -612,7 +617,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EB3EA74927689A6600ECFB33 /* Build configuration list for PBXNativeTarget "hUITests" */ = {
+		EB3EA74927689A6600ECFB33 /* Build configuration list for PBXNativeTarget "monoUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EB3EA74A27689A6600ECFB33 /* Debug */,
