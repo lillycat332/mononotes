@@ -9,3 +9,5 @@ Mononotes is a markdown notetaking/editor app for macOS
 ## Disadvantages
 - The code is a mess
 - I made this in like an hour
+## TODO
+- Proper organisation file view in the sidebar
