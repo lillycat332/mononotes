@@ -1,5 +1,5 @@
 # mononotes
-Mononotes is a markdown notetaking app for macOS
+Mononotes is a markdown notetaking/editor app for macOS
 
 ## Advantages
 - It isn't Electron (though it does embed monaco editor)
