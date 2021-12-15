@@ -9,8 +9,8 @@ import SwiftUI
 import UniformTypeIdentifiers
 
 extension UTType {
-    static var exampleText: UTType {
-        UTType(importedAs: "com.example.plain-text")
+    static var markdown: UTType {
+        UTType(importedAs: "net.daringfireball.markdown")
     }
 }
 
@@ -21,7 +21,7 @@ struct noteDocument: FileDocument {
         self.text = text
     }
 
-    static var readableContentTypes: [UTType] { [.exampleText] }
+  static var readableContentTypes: [UTType] { [.markdown] }
 
     init(configuration: ReadConfiguration) throws {
         guard let data = configuration.file.regularFileContents,

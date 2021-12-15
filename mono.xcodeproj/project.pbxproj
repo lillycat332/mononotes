@@ -15,7 +15,8 @@
 		EB3EA73427689A6600ECFB33 /* hTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3EA73327689A6600ECFB33 /* hTests.swift */; };
 		EB3EA73E27689A6600ECFB33 /* hUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3EA73D27689A6600ECFB33 /* hUITests.swift */; };
 		EB3EA74027689A6600ECFB33 /* hUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3EA73F27689A6600ECFB33 /* hUITestsLaunchTests.swift */; };
-		EBC4CCB62768ADC400267139 /* CDMarkdownKit in Frameworks */ = {isa = PBXBuildFile; productRef = EBC4CCB52768ADC400267139 /* CDMarkdownKit */; };
+		EBB0BB6F27693D4F0024009C /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = EBB0BB6E27693D4F0024009C /* MarkdownUI */; };
+		EBB0BB71276945CC0024009C /* MarkDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB0BB70276945CC0024009C /* MarkDownView.swift */; };
 		EBC4CCC02768B17B00267139 /* SwiftyMonaco in Frameworks */ = {isa = PBXBuildFile; productRef = EBC4CCBF2768B17B00267139 /* SwiftyMonaco */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 		EB3EA73927689A6600ECFB33 /* monoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = monoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB3EA73D27689A6600ECFB33 /* hUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hUITests.swift; sourceTree = "<group>"; };
 		EB3EA73F27689A6600ECFB33 /* hUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EBB0BB70276945CC0024009C /* MarkDownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkDownView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +59,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBC4CCB62768ADC400267139 /* CDMarkdownKit in Frameworks */,
 				EBC4CCC02768B17B00267139 /* SwiftyMonaco in Frameworks */,
+				EBB0BB6F27693D4F0024009C /* MarkdownUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +84,7 @@
 		EB3EA71227689A6500ECFB33 = {
 			isa = PBXGroup;
 			children = (
+				EB69FBA227692CC600BBFD7C /* Resources */,
 				EB3EA71D27689A6500ECFB33 /* mono */,
 				EB3EA73227689A6600ECFB33 /* monoTests */,
 				EB3EA73C27689A6600ECFB33 /* monoUITests */,
@@ -105,6 +108,7 @@
 				EB3EA71E27689A6500ECFB33 /* monoApp.swift */,
 				EB3EA72027689A6500ECFB33 /* monoDocument.swift */,
 				EB3EA72227689A6500ECFB33 /* ContentView.swift */,
+				EBB0BB70276945CC0024009C /* MarkDownView.swift */,
 				EB3EA72427689A6600ECFB33 /* Assets.xcassets */,
 				EB3EA72927689A6600ECFB33 /* Info.plist */,
 				EB3EA72A27689A6600ECFB33 /* mono.entitlements */,
@@ -138,6 +142,21 @@
 			path = monoUITests;
 			sourceTree = "<group>";
 		};
+		EB69FBA227692CC600BBFD7C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EB69FBA327692CD300BBFD7C /* Languages */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EB69FBA327692CD300BBFD7C /* Languages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Languages;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -155,8 +174,8 @@
 			);
 			name = mono;
 			packageProductDependencies = (
-				EBC4CCB52768ADC400267139 /* CDMarkdownKit */,
 				EBC4CCBF2768B17B00267139 /* SwiftyMonaco */,
+				EBB0BB6E27693D4F0024009C /* MarkdownUI */,
 			);
 			productName = h;
 			productReference = EB3EA71B27689A6500ECFB33 /* mono.app */;
@@ -205,6 +224,9 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				KnownAssetTags = (
+					New,
+				);
 				LastSwiftUpdateCheck = 1310;
 				LastUpgradeCheck = 1310;
 				TargetAttributes = {
@@ -231,8 +253,8 @@
 			);
 			mainGroup = EB3EA71227689A6500ECFB33;
 			packageReferences = (
-				EBC4CCB42768ADC400267139 /* XCRemoteSwiftPackageReference "CDMarkdownKit" */,
 				EBC4CCBE2768B17B00267139 /* XCRemoteSwiftPackageReference "SwiftyMonaco" */,
+				EBB0BB6D27693D4F0024009C /* XCRemoteSwiftPackageReference "MarkdownUI" */,
 			);
 			productRefGroup = EB3EA71C27689A6500ECFB33 /* Products */;
 			projectDirPath = "";
@@ -279,6 +301,7 @@
 				EB3EA71F27689A6500ECFB33 /* monoApp.swift in Sources */,
 				EB3EA72127689A6500ECFB33 /* monoDocument.swift in Sources */,
 				EB3EA72327689A6500ECFB33 /* ContentView.swift in Sources */,
+				EBB0BB71276945CC0024009C /* MarkDownView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,8 +468,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = h/Info.plist;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_FILE = mono/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -476,8 +499,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = h/Info.plist;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_FILE = mono/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -629,11 +652,11 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		EBC4CCB42768ADC400267139 /* XCRemoteSwiftPackageReference "CDMarkdownKit" */ = {
+		EBB0BB6D27693D4F0024009C /* XCRemoteSwiftPackageReference "MarkdownUI" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/chrisdhaan/CDMarkdownKit.git";
+			repositoryURL = "https://github.com/gonzalezreal/MarkdownUI";
 			requirement = {
-				branch = master;
+				branch = main;
 				kind = branch;
 			};
 		};
@@ -648,10 +671,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		EBC4CCB52768ADC400267139 /* CDMarkdownKit */ = {
+		EBB0BB6E27693D4F0024009C /* MarkdownUI */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = EBC4CCB42768ADC400267139 /* XCRemoteSwiftPackageReference "CDMarkdownKit" */;
-			productName = CDMarkdownKit;
+			package = EBB0BB6D27693D4F0024009C /* XCRemoteSwiftPackageReference "MarkdownUI" */;
+			productName = MarkdownUI;
 		};
 		EBC4CCBF2768B17B00267139 /* SwiftyMonaco */ = {
 			isa = XCSwiftPackageProductDependency;
