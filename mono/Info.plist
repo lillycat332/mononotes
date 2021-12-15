@@ -76,6 +76,7 @@
 				<key>public.filename-extension</key>
 				<array>
 					<string>.md</string>
+					<string>.markdown</string>
 				</array>
 				<key>public.mime-type</key>
 				<array>

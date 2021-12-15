@@ -15,6 +15,7 @@
 		EB3EA73427689A6600ECFB33 /* hTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3EA73327689A6600ECFB33 /* hTests.swift */; };
 		EB3EA73E27689A6600ECFB33 /* hUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3EA73D27689A6600ECFB33 /* hUITests.swift */; };
 		EB3EA74027689A6600ECFB33 /* hUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3EA73F27689A6600ECFB33 /* hUITestsLaunchTests.swift */; };
+		EB4B59142769F0A300B8BD80 /* fileEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4B59132769F0A300B8BD80 /* fileEnum.swift */; };
 		EBB0BB6F27693D4F0024009C /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = EBB0BB6E27693D4F0024009C /* MarkdownUI */; };
 		EBB0BB71276945CC0024009C /* MarkDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB0BB70276945CC0024009C /* MarkDownView.swift */; };
 		EBC4CCC02768B17B00267139 /* SwiftyMonaco in Frameworks */ = {isa = PBXBuildFile; productRef = EBC4CCBF2768B17B00267139 /* SwiftyMonaco */; };
@@ -51,6 +52,7 @@
 		EB3EA73927689A6600ECFB33 /* monoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = monoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB3EA73D27689A6600ECFB33 /* hUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hUITests.swift; sourceTree = "<group>"; };
 		EB3EA73F27689A6600ECFB33 /* hUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EB4B59132769F0A300B8BD80 /* fileEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fileEnum.swift; sourceTree = "<group>"; };
 		EBB0BB70276945CC0024009C /* MarkDownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkDownView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,6 +111,7 @@
 				EB3EA72027689A6500ECFB33 /* monoDocument.swift */,
 				EB3EA72227689A6500ECFB33 /* ContentView.swift */,
 				EBB0BB70276945CC0024009C /* MarkDownView.swift */,
+				EB4B59132769F0A300B8BD80 /* fileEnum.swift */,
 				EB3EA72427689A6600ECFB33 /* Assets.xcassets */,
 				EB3EA72927689A6600ECFB33 /* Info.plist */,
 				EB3EA72A27689A6600ECFB33 /* mono.entitlements */,
@@ -298,6 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB4B59142769F0A300B8BD80 /* fileEnum.swift in Sources */,
 				EB3EA71F27689A6500ECFB33 /* monoApp.swift in Sources */,
 				EB3EA72127689A6500ECFB33 /* monoDocument.swift in Sources */,
 				EB3EA72327689A6500ECFB33 /* ContentView.swift in Sources */,
