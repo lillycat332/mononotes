@@ -10,7 +10,7 @@ import MarkdownUI
 
 struct LightContentView: View {
   @Binding var document: noteDocument
-  @ObservedObject var userSettings = UserSettings()
+  @AppStorage("fontSize") var fontSize = 0.0
   
   var body: some View {
     NavigationView {
@@ -19,7 +19,7 @@ struct LightContentView: View {
       HSplitView {
         TextEditor(text: $document.text)
           .padding([.leading], 20.0)
-          .font(.system(.body, design: .monospaced))
+          .font(.system(size: fontSize, design: .monospaced))
           .disableAutocorrection(true)
         MarkDownView(document: $document)
       }

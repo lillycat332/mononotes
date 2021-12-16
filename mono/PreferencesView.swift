@@ -14,6 +14,7 @@ struct PreferencesView: View {
   @AppStorage("minimapEnabled") var minimapEnabled = true
   @AppStorage("fontSize") var fontSize = 0
   @AppStorage("editorType") var editorType = "Native"
+  
   private enum Tabs: Hashable {
     case general, advanced
   }
@@ -39,18 +40,26 @@ struct EditorOptionsView: View {
   
   var body: some View {
     Form {
+      VStack(alignment: .center) {
       TextField("Font Size", value: $fontSize, formatter: NumberFormatter())
+        .padding()
       Picker(selection: $editorType, label: Text("Editor Type")) {
         ForEach(editors, id: \.self) {
           Text($0)
         }
       }
+      .padding()
       
-      Text("To apply preferences, mono needs to restart.")
-        .preferenceDescription()
-        .padding(10)
-      Spacer()
+      Text("To apply certain preferences, mono needs to restart.")
+          .padding(.vertical)
+      }
     }
+  }
+}
+
+struct EditorOptionsView_Previews: PreviewProvider {
+  static var previews: some View {
+    EditorOptionsView()
   }
 }
 
