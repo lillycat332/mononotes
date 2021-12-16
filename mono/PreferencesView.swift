@@ -10,11 +10,6 @@ import Preferences
 import Combine
 
 struct PreferencesView: View {
-  let editors = ["Native", "Monaco"]
-  @AppStorage("minimapEnabled") var minimapEnabled = true
-  @AppStorage("fontSize") var fontSize = 0
-  @AppStorage("editorType") var editorType = "Native"
-  
   private enum Tabs: Hashable {
     case general, advanced
   }
@@ -22,7 +17,19 @@ struct PreferencesView: View {
     TabView {
       EditorOptionsView()
         .tabItem {
-          Label("Editor", systemImage: "pencil.circle")
+          Label("General", systemImage: "pencil.circle")
+        }
+        .tag(Tabs.general)
+      
+      MonacoOptionsView()
+        .tabItem {
+          Label("Monaco", systemImage: "chevron.left.forwardslash.chevron.right")
+        }
+        .tag(Tabs.general)
+      
+      NativeOptionsView()
+        .tabItem {
+          Label("Native", systemImage: "swift")
         }
         .tag(Tabs.general)
     }
@@ -34,25 +41,44 @@ struct PreferencesView: View {
 
 struct EditorOptionsView: View {
   let editors = ["Native", "Monaco"]
-  @AppStorage("minimapEnabled") var minimapEnabled = true
   @AppStorage("fontSize") var fontSize = 0
   @AppStorage("editorType") var editorType = "Native"
   
   var body: some View {
     Form {
       VStack(alignment: .center) {
-      TextField("Font Size", value: $fontSize, formatter: NumberFormatter())
-        .padding()
-      Picker(selection: $editorType, label: Text("Editor Type")) {
-        ForEach(editors, id: \.self) {
-          Text($0)
+        TextField("Font Size", value: $fontSize, formatter: NumberFormatter())
+          .padding()
+        Picker(selection: $editorType, label: Text("Editor Type")) {
+          ForEach(editors, id: \.self) {
+            Text($0)
+          }
         }
+        .padding()
       }
-      .padding()
-      
-      Text("To apply certain preferences, mono needs to restart.")
-          .padding(.vertical)
-      }
+    }
+  }
+}
+
+struct MonacoOptionsView: View {
+  @AppStorage("minimapEnabled") var minimapEnabled = true
+  
+  var body: some View {
+    Form {
+      Toggle("Minimap", isOn:$minimapEnabled)
+      Text("To apply these preferences, mono needs to restart.")
+        .padding(.vertical)
+    }
+  }
+}
+
+struct NativeOptionsView: View {
+  @AppStorage("minimapEnabled") var minimapEnabled = true
+  
+  var body: some View {
+    Form {
+      Text("Nothing Yet!")
+        .padding(.vertical)
     }
   }
 }
