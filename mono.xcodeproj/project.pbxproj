@@ -16,6 +16,8 @@
 		EB3EA73E27689A6600ECFB33 /* hUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3EA73D27689A6600ECFB33 /* hUITests.swift */; };
 		EB3EA74027689A6600ECFB33 /* hUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3EA73F27689A6600ECFB33 /* hUITestsLaunchTests.swift */; };
 		EB4B59142769F0A300B8BD80 /* fileEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4B59132769F0A300B8BD80 /* fileEnum.swift */; };
+		EB55A32A276B87C70036F475 /* PreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB55A329276B87C70036F475 /* PreferencesView.swift */; };
+		EB55A32E276B89FE0036F475 /* Preferences in Frameworks */ = {isa = PBXBuildFile; productRef = EB55A32D276B89FE0036F475 /* Preferences */; };
 		EBB0BB6F27693D4F0024009C /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = EBB0BB6E27693D4F0024009C /* MarkdownUI */; };
 		EBB0BB71276945CC0024009C /* MarkDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB0BB70276945CC0024009C /* MarkDownView.swift */; };
 		EBC4CCC02768B17B00267139 /* SwiftyMonaco in Frameworks */ = {isa = PBXBuildFile; productRef = EBC4CCBF2768B17B00267139 /* SwiftyMonaco */; };
@@ -53,6 +55,7 @@
 		EB3EA73D27689A6600ECFB33 /* hUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hUITests.swift; sourceTree = "<group>"; };
 		EB3EA73F27689A6600ECFB33 /* hUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		EB4B59132769F0A300B8BD80 /* fileEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fileEnum.swift; sourceTree = "<group>"; };
+		EB55A329276B87C70036F475 /* PreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesView.swift; sourceTree = "<group>"; };
 		EBB0BB70276945CC0024009C /* MarkDownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkDownView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,6 +65,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBC4CCC02768B17B00267139 /* SwiftyMonaco in Frameworks */,
+				EB55A32E276B89FE0036F475 /* Preferences in Frameworks */,
 				EBB0BB6F27693D4F0024009C /* MarkdownUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -86,7 +90,6 @@
 		EB3EA71227689A6500ECFB33 = {
 			isa = PBXGroup;
 			children = (
-				EB69FBA227692CC600BBFD7C /* Resources */,
 				EB3EA71D27689A6500ECFB33 /* mono */,
 				EB3EA73227689A6600ECFB33 /* monoTests */,
 				EB3EA73C27689A6600ECFB33 /* monoUITests */,
@@ -107,10 +110,9 @@
 		EB3EA71D27689A6500ECFB33 /* mono */ = {
 			isa = PBXGroup;
 			children = (
+				EB55A32B276B87CD0036F475 /* Views */,
 				EB3EA71E27689A6500ECFB33 /* monoApp.swift */,
 				EB3EA72027689A6500ECFB33 /* monoDocument.swift */,
-				EB3EA72227689A6500ECFB33 /* ContentView.swift */,
-				EBB0BB70276945CC0024009C /* MarkDownView.swift */,
 				EB4B59132769F0A300B8BD80 /* fileEnum.swift */,
 				EB3EA72427689A6600ECFB33 /* Assets.xcassets */,
 				EB3EA72927689A6600ECFB33 /* Info.plist */,
@@ -145,19 +147,14 @@
 			path = monoUITests;
 			sourceTree = "<group>";
 		};
-		EB69FBA227692CC600BBFD7C /* Resources */ = {
+		EB55A32B276B87CD0036F475 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				EB69FBA327692CD300BBFD7C /* Languages */,
+				EB3EA72227689A6500ECFB33 /* ContentView.swift */,
+				EBB0BB70276945CC0024009C /* MarkDownView.swift */,
+				EB55A329276B87C70036F475 /* PreferencesView.swift */,
 			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		EB69FBA327692CD300BBFD7C /* Languages */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Languages;
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +176,7 @@
 			packageProductDependencies = (
 				EBC4CCBF2768B17B00267139 /* SwiftyMonaco */,
 				EBB0BB6E27693D4F0024009C /* MarkdownUI */,
+				EB55A32D276B89FE0036F475 /* Preferences */,
 			);
 			productName = h;
 			productReference = EB3EA71B27689A6500ECFB33 /* mono.app */;
@@ -258,6 +256,7 @@
 			packageReferences = (
 				EBC4CCBE2768B17B00267139 /* XCRemoteSwiftPackageReference "SwiftyMonaco" */,
 				EBB0BB6D27693D4F0024009C /* XCRemoteSwiftPackageReference "MarkdownUI" */,
+				EB55A32C276B89FE0036F475 /* XCRemoteSwiftPackageReference "Preferences" */,
 			);
 			productRefGroup = EB3EA71C27689A6500ECFB33 /* Products */;
 			projectDirPath = "";
@@ -302,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB4B59142769F0A300B8BD80 /* fileEnum.swift in Sources */,
+				EB55A32A276B87C70036F475 /* PreferencesView.swift in Sources */,
 				EB3EA71F27689A6500ECFB33 /* monoApp.swift in Sources */,
 				EB3EA72127689A6500ECFB33 /* monoDocument.swift in Sources */,
 				EB3EA72327689A6500ECFB33 /* ContentView.swift in Sources */,
@@ -523,6 +523,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -548,6 +549,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -656,6 +658,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		EB55A32C276B89FE0036F475 /* XCRemoteSwiftPackageReference "Preferences" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/Preferences";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		EBB0BB6D27693D4F0024009C /* XCRemoteSwiftPackageReference "MarkdownUI" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/gonzalezreal/MarkdownUI";
@@ -675,6 +685,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		EB55A32D276B89FE0036F475 /* Preferences */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB55A32C276B89FE0036F475 /* XCRemoteSwiftPackageReference "Preferences" */;
+			productName = Preferences;
+		};
 		EBB0BB6E27693D4F0024009C /* MarkdownUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = EBB0BB6D27693D4F0024009C /* XCRemoteSwiftPackageReference "MarkdownUI" */;

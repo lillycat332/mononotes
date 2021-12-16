@@ -7,9 +7,21 @@
 
 import SwiftUI
 
+class UserSettings: ObservableObject {
+  init() {
+    minimapEnabled = UserDefaults.standard.bool(forKey: "minimapEnabled")
+  }
+  
+  @Published var minimapEnabled: Bool {
+    didSet {
+      UserDefaults.standard.set(minimapEnabled, forKey: "minimapEnabled")
+    }
+  }
+}
 
 @main
 struct monoApp: App {
+  @ObservedObject var userSettings = UserSettings()
   var body: some Scene {
     DocumentGroup(newDocument: noteDocument()) { file in
       ContentView(document: file.$document)
@@ -30,6 +42,11 @@ struct monoApp: App {
         }
         .keyboardShortcut("u", modifiers: .command)
       }
+      CommandGroup(after: CommandGroupPlacement.windowArrangement) {
+        Toggle(isOn: $userSettings.minimapEnabled) {
+          Label("Toggle Minimap", systemImage: "map")
+        }
+      }
     }
   }
 }
@@ -45,4 +62,3 @@ public func italicize() {
 public func uline() {
   
 }
-

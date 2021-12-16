@@ -9,8 +9,11 @@ import SwiftUI
 import SwiftyMonaco
 import MarkdownUI
 
+
 struct ContentView: View {
   @Binding var document: noteDocument
+  @ObservedObject var userSettings = UserSettings()
+  
   var body: some View {
     NavigationView {
       List {
@@ -32,7 +35,6 @@ struct ContentView: View {
         Button(action: uline) {
           Label("Underline", systemImage: "underline")
         }
-
       }
     }
   }
