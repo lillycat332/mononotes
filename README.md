@@ -16,4 +16,5 @@ Mononotes is a markdown notetaking/editor app for macOS
 - Because I can
 ## TODO
 - Proper organisation file view in the sidebar
+- Perhaps an option to disable the monaco editor in place of a lesser featured, SwiftUI only editor?
 
