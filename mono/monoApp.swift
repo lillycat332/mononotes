@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import Preferences
+import PreferencePanes
 
 class UserSettings: ObservableObject {
   init() {
@@ -22,9 +24,18 @@ class UserSettings: ObservableObject {
 @main
 struct monoApp: App {
   @ObservedObject var userSettings = UserSettings()
+  @AppStorage("minimapEnabled") var minimapEnabled = true
+  @AppStorage("fontSize") var fontSize = 0
+  @AppStorage("editorType") var editorType = "Native"
+  
   var body: some Scene {
     DocumentGroup(newDocument: noteDocument()) { file in
-      ContentView(document: file.$document)
+      if editorType != "Monaco" {
+        LightContentView(document: file.$document)
+      }
+      else {
+        WKContentView(document: file.$document)
+      }
     }.commands {
       CommandGroup(before: CommandGroupPlacement.textFormatting) {
         Button(action: embolden) {
@@ -42,11 +53,22 @@ struct monoApp: App {
         }
         .keyboardShortcut("u", modifiers: .command)
       }
+      
       CommandGroup(after: CommandGroupPlacement.windowArrangement) {
         Toggle(isOn: $userSettings.minimapEnabled) {
           Label("Toggle Minimap", systemImage: "map")
         }
       }
+      
+      CommandGroup(replacing: .appInfo) {
+        NavigationLink(destination: AboutView()) {
+          Label("About mono", systemImage: "command")
+        }
+      }
+    }
+    
+    Settings {
+      PreferencesView()
     }
   }
 }
