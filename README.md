@@ -8,6 +8,7 @@ Mononotes is a markdown notetaking/editor app for macOS
 - It's less than 100 MB, and has a smaller memory footprint than similar Electron apps
 - It isn't closed source
 - It's SwiftUI aside from the monaco editor, so it feels native
+- If you don't like webshit ( I don't ) you can choose to use a native editor instead for better performance.
 ## Disadvantages
 - The code is a mess
 - I made this in like an hour
@@ -16,4 +17,5 @@ Mononotes is a markdown notetaking/editor app for macOS
 - Because I can
 ## TODO
 - Proper organisation file view in the sidebar
+- ~~Perhaps an option to disable the monaco editor in place of a lesser featured, SwiftUI only editor?~~ DONE
 
