@@ -19,6 +19,7 @@ struct LightContentView: View {
       HSplitView {
         TextEditor(text: $document.text)
           .padding([.leading], 20.0)
+          .padding([.top])
           .font(.system(size: fontSize, design: .monospaced))
           .disableAutocorrection(true)
         MarkDownView(document: $document)
