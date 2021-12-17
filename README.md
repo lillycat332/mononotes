@@ -23,7 +23,7 @@ Mononotes is a markdown notetaking/editor app for macOS
 - ~~Perhaps an option to disable the monaco editor in place of a lesser featured, SwiftUI only editor?~~ DONE
 
 ## KNOWN ISSUES
-- Sometimes the markdown parser dies for no apparent reason (mostly with the native editor, perhaps an encoding thing?)
+- Sometimes the markdown parser dies for no apparent reason (seems to be a frame issue)
 - The preferences UI isn't very good
 - The app sucks
 
